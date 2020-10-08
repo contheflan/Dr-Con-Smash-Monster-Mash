@@ -1,10 +1,10 @@
 ## Project Name
 
-Dr-Con-Smash-Monster-Mash
+Dr. Con Smash Monster Mash
 
 ## Project Description
 
-Aren't you just tired of fighting the same of Kobolds, boring Goblins and the ever exhaustive Orc(Ork/Orruk/Uruk/Uruk hai etc. etc.) Enter Dr. Con Smash Monster Mash! (Patent Pending) With the crank of a lever, this magical machine refers to a horrible database of Spooky Monster Traits (Patent Pending) selects a handful of horrible results, and breathes new life (or un-life) into your run of the mill common monster, transforming them into a terrifying titan! (Deadliness results may vary, please contact your Court Wizard)
+Aren't you just tired of fighting the same old Kobolds, boring Goblins and the ever exhaustive Orc(Ork/Orruk/Orsimer/Uruk/Uruk hai etc. etc.) Enter Dr. Con Smash Monster Mash! (Patent Pending) With the crank of a lever, this magical machine refers to a horrible database of Spooky Monster Traits (Patent Pending) selects a handful of horrible results, and breathes new life (or un-life) into your run of the mill common monster, transforming them into a terrifying titan! (Deadliness results may vary, please contact your Court Wizard)
 
 ## Wireframes
 
@@ -14,7 +14,24 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 
 Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
 
+App
+|__Header
+| |__Logo
+|__Search bar
+| |__Input field
+| |__Button
+|__Card
+| |__Weather details
+|   |__Icon
+|   |__Temperature
+|   |__Description
+|   |__Date
+|__Footer
+| |__Logo
+
+
 ## API and Data Sample
+
 
 
 ### MVP/PostMVP
@@ -22,9 +39,8 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
+- Refer to 
 - Render data on page 
 - Allow user to choose favorites 
 
@@ -42,8 +58,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
+|Sept 08| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Sept 09| Project Approval | Incomplete
 |July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |July 14| Pseudocode / actual code | Incomplete
 |July 15| Initial Clickable Model  | Incomplete
@@ -65,9 +81,13 @@ Time frames are also key in the development cycle.  You have limited time to cod
 ## SWOT Analysis
 
 ### Strengths:
+-Expects a lot from himself, high personal bar for indiviual work product
 
 ### Weaknesses:
+-Waits too long to ask for help
 
 ### Opportunities:
+-Ownership in the pre-work preparation and project prompt
 
 ### Threats:
+-Not having a clear direction for the project and lacking ideas
