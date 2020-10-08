@@ -8,7 +8,9 @@ Aren't you just tired of fighting the same old Kobolds, boring Goblins and the e
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+![Monster Mash Proof of Concept](https://i.imgur.com/2Axl6Oy.png)
+![Monster Mash Proof of Concept 2](https://i.imgur.com/s6ttX3u.png)
+
 
 ## Component Hierarchy
 
