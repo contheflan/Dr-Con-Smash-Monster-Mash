@@ -9,7 +9,8 @@ Aren't you just tired of fighting the same old Kobolds, boring Goblins and the e
 ## Wireframes
 
 ![Monster Mash Proof of Concept](https://i.imgur.com/2Axl6Oy.png)
-![Monster Mash Proof of Concept 2](https://i.imgur.com/s6ttX3u.png)
+![Monster Mash Proof of Concept 2](https://i.imgur.com/61L6akw.png)
+![Monster Mash Proof of Concept 3] (https://i.imgur.com/pOo5rod.png)
 
 
 ## Component Hierarchy
