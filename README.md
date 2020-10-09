@@ -25,7 +25,7 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 
 
 ## API and Data Sample
-
+https://airtable.com/tbllSjukRV7CtgLlI/viwE3fqve4iIQeAWJ?blocks=hide
 ![Monster Mash Data Sample](https://i.imgur.com/5Q4UIWe.png)
 
 
@@ -43,6 +43,7 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 
 - Add more monster bases (up from just Goblin)
 - Animations for Monster Mutation Components
+- Add more modifiers with more game component effects instead of just stats (advantage on attacks, free action disengaging etc.)
 
 ## Project Schedule
 
@@ -61,21 +62,21 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Creating Base React App with Components | H | 1hr | | |
-| Implementing Airtable | H | 2hr| | |
-| Writing Specific Page Render Components | H | 3hr| | |
+| Creating Base React App with Components, NPM, React Router| H | 1hr | | |
+| Implementing Airtable | H | 3hr| | |
+| Writing Specific Page Render Components | H | 8hr| | |
 | Writing Monster Mutation Components | H | 8hrs| | |
 | Connecting Components to App.js | H | 6hrs| | |
 | Rendering Components | H | 8hrs| | |
 | Troubleshooting Components | H | 6hrs| |  |
-| Adding Media Queries for Mobile | H | 8hrs| |  |
+| Adding Media Queries for Mobile/Tablet | H | 8hrs| |  |
 | Troubleshooting CSS | M | 6hrs| | |
 | Total | - | 48hrs| | |
 
 ## SWOT Analysis
 
 ### Strengths:
--High expectations of fun creative ideas.
+-High expectations and quick to create fun ideas.
 
 ### Weaknesses:
 -Doesnt know the best method of asking questions for better understanding of react concepts.
