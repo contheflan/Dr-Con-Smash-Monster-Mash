@@ -9,10 +9,14 @@ Aren't you just tired of fighting the same old Kobolds, boring Goblins and the e
 ## Wireframes
 https://www.figma.com/file/hRlZasJ6JfyarjSM5OqVvm/Con-Smash-Monster-Mash?node-id=2%3A3
 
-![Monster Mash Proof of Concept](https://i.imgur.com/BG9qB8v.png)\
+![Monster Mash Proof of Concept](https://i.imgur.com/BG9qB8v.png)
+
 Initial splash screen and monster creation page.
+
 ![Monster Mash Proof of Concept 2](https://i.imgur.com/ZLwHt6z.png)
+
 After mutating your monster, you can check out your creation (POST MVP) reference a list of creations and reference your favorites.
+
 ![Monster Mash Proof of Concept 3](https://i.imgur.com/d1vumzQ.png)
 
 Tablet and Mobile versions of the app.
