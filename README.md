@@ -13,12 +13,12 @@ Initial splash screen and monster creation page.
 ![Monster Mash Proof of Concept](https://i.imgur.com/BG9qB8v.png)
 
 
-After mutating your monster, you can check out your creation (POST MVP) reference a list of creations and reference your favorites.
+After mutating your monster, you can check out your creations and reference a list of creations.
 ![Monster Mash Proof of Concept 2](https://i.imgur.com/ZLwHt6z.png)
 
 
 Tablet and Mobile versions of the app.
-![Monster Mash Proof of Concept 3](https://i.imgur.com/d1vumzQ.png)
+![Monster Mash Proof of Concept 3](https://i.imgur.com/27eTZZf.png)
 
 
 
@@ -50,6 +50,7 @@ https://airtable.com/tbllSjukRV7CtgLlI/viwE3fqve4iIQeAWJ?blocks=hide
 - Add more monster bases (up from just Goblin)
 - Animations for Monster Mutation Components
 - Add more modifiers with more game component effects instead of just stats (advantage on attacks, free action disengaging etc.)
+- Pick favorite monsters for easy reference
 
 ## Project Schedule
 
@@ -88,7 +89,7 @@ https://airtable.com/tbllSjukRV7CtgLlI/viwE3fqve4iIQeAWJ?blocks=hide
 -Doesnt know the best method of asking questions for better understanding of react concepts.
 
 ### Opportunities:
--Creative muscles flexed when coming up with interesting project 'gimmicks'.
+-Creative muscles flex when coming up with interesting project ideas.
 
 ### Threats:
 -Not having a clear direction for tackling more complex project goals.
