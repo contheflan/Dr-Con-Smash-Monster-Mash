@@ -69,7 +69,7 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 | Rendering Components | H | 8hrs| | |
 | Troubleshooting Components | H | 6hrs| |  |
 | Adding Media Queries for Mobile | H | 8hrs| |  |
-| Troubleshooting CSS | H | 6hrs| | |
+| Troubleshooting CSS | M | 6hrs| | |
 | Total | - | 48hrs| | |
 
 ## SWOT Analysis
