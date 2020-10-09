@@ -70,7 +70,7 @@ https://airtable.com/tbllSjukRV7CtgLlI/viwE3fqve4iIQeAWJ?blocks=hide
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Creating Base React App with Components, NPM, React Router| H | 1hr | | |
-| Implementing Airtable | H | 3hr| | |
+| Implementing Airtable | H | 3hrs| | |
 | Writing Specific Page Render Components | H | 8hrs| | |
 | Writing Monster Mutation Components | H | 8hrs| | |
 | Connecting Components to App.js | H | 6hrs| | |
