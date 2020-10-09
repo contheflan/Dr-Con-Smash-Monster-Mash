@@ -7,12 +7,14 @@ Dr. Con Smash Monster Mash
 Aren't you just tired of fighting the same old Kobolds, boring Goblins and the ever exhaustive Orc(Ork/Orruk/Orsimer/Uruk/Uruk hai etc. etc.) Enter Dr. Con Smash Monster Mash! (Patent Pending) With the crank of a lever, this magical machine refers to a horrible database of Spooky Monster Traits (Patent Pending) selects a handful of horrible results, and breathes new life (or un-life) into your run of the mill common monster, transforming them into a terrifying titan! (Deadliness results may vary, please contact your Court Wizard)
 
 ## Wireframes
+https://www.figma.com/file/hRlZasJ6JfyarjSM5OqVvm/Con-Smash-Monster-Mash?node-id=2%3A3
 
-![Monster Mash Proof of Concept](https://i.imgur.com/2Axl6Oy.png)\
+![Monster Mash Proof of Concept](https://i.imgur.com/BG9qB8v.png)\
 Initial splash screen and monster creation page.
-![Monster Mash Proof of Concept 2](https://i.imgur.com/61L6akw.png)
-After mutating your monster, you can publish it to the monster index where you can keep track of your creations.
-![Monster Mash Proof of Concept 3](https://i.imgur.com/pOo5rod.png)
+![Monster Mash Proof of Concept 2](https://i.imgur.com/ZLwHt6z.png)
+After mutating your monster, you can check out your creation (POST MVP) reference a list of creations and reference your favorites.
+![Monster Mash Proof of Concept 3](https://i.imgur.com/d1vumzQ.png)
+Tablet and Mobile versions of the app.
 
 
 ## Component Hierarchy
