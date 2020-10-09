@@ -70,14 +70,14 @@ https://airtable.com/tbllSjukRV7CtgLlI/viwE3fqve4iIQeAWJ?blocks=hide
 | --- | :---: |  :---: | :---: | :---: |
 | Creating Base React App with Components, NPM, React Router| H | 1hr | | |
 | Implementing Airtable | H | 3hr| | |
-| Writing Specific Page Render Components | H | 8hr| | |
+| Writing Specific Page Render Components | H | 8hrs| | |
 | Writing Monster Mutation Components | H | 8hrs| | |
 | Connecting Components to App.js | H | 6hrs| | |
 | Rendering Components | H | 8hrs| | |
 | Troubleshooting Components | H | 6hrs| |  |
 | Adding Media Queries for Mobile/Tablet | H | 8hrs| |  |
 | Troubleshooting CSS | M | 6hrs| | |
-| Total | - | 48hrs| | |
+| Total | - | 54hrs| | |
 
 ## SWOT Analysis
 
