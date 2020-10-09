@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { baseURL } from "./constants";
 
 function Main(props) {
   return (
     <div>
       <h3>ACH!</h3>
-      <div>
-        {props.monster.map((bird) => (
-          // map function that assigns "bird" to the object so we can get the name and image of the index of the array of objects
-          <Link to={`/bird/${bird.name}`}>
-            <img src={bird.image} />
-            {/* using string interpolation to grab the bird path and image and render it to the DOM */}
-          </Link>
-        ))}
-      </div>
+
+      {props.monster && (
+        <div>
+          <h2>{props.monster.Name}</h2>
+          <p>
+            STR:{props.monster.STR} DEX:{props.monster.DEX} CON:
+            {props.monster.CON} INT:
+            {props.monster.INT} WIS:{props.monster.WIS} CHA:
+            {props.monster.CHA}
+          </p>
+        </div>
+      )}
     </div>
   );
 }

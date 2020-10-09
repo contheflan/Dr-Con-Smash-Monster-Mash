@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, Route } from "react-router";
 import axios from "axios";
 import { baseURL, key } from "./constants";
+import Intro from "./Intro";
 import Main from "./Main";
 import Results from "./Results";
 import "./App.css";
@@ -36,15 +37,12 @@ function App() {
     <div className="App">
       <body>
         <h1>Hello Gore-ld</h1>
-        {monster && (
-          <div>
-            <h2>{monster.Name}</h2>
-            <p>
-              STR:{monster.STR} DEX:{monster.DEX} CON:{monster.CON} INT:
-              {monster.INT} WIS:{monster.WIS} CHA:{monster.CHA}
-            </p>
-          </div>
-        )}
+        <Route exact path="/">
+          <Intro />
+        </Route>
+        <Route exact path="/Main">
+          <Main />
+        </Route>
       </body>
     </div>
   );
