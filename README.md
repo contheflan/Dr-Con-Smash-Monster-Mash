@@ -4,7 +4,7 @@ Dr. Con Smash Monster Mash
 
 ## Project Description
 
-Aren't you just tired of fighting the same old Kobolds, boring Goblins and the ever exhaustive Orc(Ork/Orruk/Orsimer/Uruk/Uruk hai etc. etc.) Enter Dr. Con Smash Monster Mash! (Patent Pending) With the crank of a lever, this magical machine refers to a horrible database of Spooky Monster Traits (Patent Pending) selects a handful of horrible results, and breathes new life (or un-life) into your run of the mill common monster, transforming them into a terrifying titan! (Deadliness results may vary, please contact your Court Wizard)
+Aren't you just tired of fighting the same old Goblins over and over again? Enter Dr. Con Smash Monster Mash! (Patent Pending) With the crank of a lever, this magical machine refers to a horrible database of Spooky Monster Traits (Patent Pending) selects a handful of horrible results, and breathes new life (or un-life) into your run of the mill common monster, transforming them into a terrifying titan! (Deadliness results may vary, please contact your Court Wizard)
 
 ## Wireframes
 https://www.figma.com/file/hRlZasJ6JfyarjSM5OqVvm/Con-Smash-Monster-Mash?node-id=2%3A3
