@@ -1,68 +1,91 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Name
 
-## Available Scripts
+Dr. Con Smash Monster Mash
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+Aren't you just tired of fighting the same old Goblins over and over again? Enter Dr. Con Smash Monster Mash! (Patent Pending) With the push of a button, this magical machine refers to a horrible database of Spooky Monster Traits (Patent Pending) selects a handful of horrible results, and breathes new life (or un-life) into your run of the mill common monster, transforming them into a terrifying titan! (Deadliness results may vary, please contact your Court Wizard)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframes
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+https://www.figma.com/file/hRlZasJ6JfyarjSM5OqVvm/Con-Smash-Monster-Mash?node-id=2%3A3
+Initial splash screen and monster creation page.
+![Monster Mash Proof of Concept](https://i.imgur.com/BG9qB8v.png)
+After mutating your monster, you can check out your creations and reference a list of creations.
+![Monster Mash Proof of Concept 2](https://i.imgur.com/ZLwHt6z.png)
+Tablet and Mobile versions of the app.
+![Monster Mash Proof of Concept 3](https://i.imgur.com/27eTZZf.png)
 
-### `npm test`
+## Component Hierarchy
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+![Monster Mash Hierarchy](https://i.imgur.com/L2ppdz0.png)
 
-### `npm run build`
+## API and Data Sample
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://airtable.com/tbllSjukRV7CtgLlI/viwE3fqve4iIQeAWJ?blocks=hide
+![Monster Mash Data Sample](https://i.imgur.com/5Q4UIWe.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### MVP/PostMVP
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### MVP
 
-### `npm run eject`
+- Create and reference an Airtable for initial monster mutations.
+- Create 6 different modifier buttons that affect the monsters initial stats.
+- Store the monster mutation results and post them to Airtable.
+- Create results page to house your monster mutation information.
+- Post your creations to an additional Airtable table.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### PostMVP
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- More Complex Mutations
+- Monster Index
+- Add more monster bases (up from just Goblin)
+- Animations for Monster Mutation Components
+- Add more modifiers with more game component effects instead of just stats (advantage on attacks, free action disengaging etc.)
+- Pick favorite monsters for easy reference
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Project Schedule
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Day    | Deliverable                                        | Status     |
+| ------ | -------------------------------------------------- | ---------- |
+| OCT 08 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
+| OCT 09 | Project Approval                                   | Incomplete |
+| OCT 12 | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
+| OCT 13 | Pseudocode / actual code                           | Incomplete |
+| OCT 14 | Initial Clickable Model                            | Incomplete |
+| OCT 15 | MVP                                                | Incomplete |
+| OCT 16 | Presentations                                      | Incomplete |
 
-## Learn More
+## Timeframes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Component                                                  | Priority | Estimated Time | Time Invested | Actual Time |
+| ---------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Creating Base React App with Components, NPM, React Router |    H     |      1hr       |               |             |
+| Implementing Airtable                                      |    H     |      3hrs      |               |             |
+| Writing Specific Page Render Components                    |    H     |      8hrs      |               |             |
+| Writing Monster Mutation Components                        |    H     |      8hrs      |               |             |
+| Connecting Components to App.js                            |    H     |      6hrs      |               |             |
+| Rendering Components                                       |    H     |      8hrs      |               |             |
+| Troubleshooting Components                                 |    H     |      6hrs      |               |             |
+| Adding Media Queries for Mobile/Tablet                     |    H     |      8hrs      |               |             |
+| Troubleshooting CSS                                        |    M     |      6hrs      |               |             |
+| Total                                                      |    -     |     54hrs      |               |             |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## SWOT Analysis
 
-### Code Splitting
+### Strengths:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+-High expectations and quick to create fun ideas.
 
-### Analyzing the Bundle Size
+### Weaknesses:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+-Doesnt know the best method of asking questions for better understanding of react concepts.
 
-### Making a Progressive Web App
+### Opportunities:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+-Creative muscles flex when coming up with interesting project ideas.
 
-### Advanced Configuration
+### Threats:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+-Not having a clear direction for tackling more complex project goals.
