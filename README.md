@@ -8,8 +8,10 @@ Aren't you just tired of fighting the same old Kobolds, boring Goblins and the e
 
 ## Wireframes
 
-![Monster Mash Proof of Concept](https://i.imgur.com/2Axl6Oy.png)
+![Monster Mash Proof of Concept](https://i.imgur.com/2Axl6Oy.png)\
+Initial splash screen and monster creation page.
 ![Monster Mash Proof of Concept 2](https://i.imgur.com/61L6akw.png)
+After mutating your monster, you can publish it to the monster index where you can keep track of your creations.
 ![Monster Mash Proof of Concept 3](https://i.imgur.com/pOo5rod.png)
 
 
