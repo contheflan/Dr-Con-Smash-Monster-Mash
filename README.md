@@ -42,11 +42,13 @@ https://airtable.com/tbllSjukRV7CtgLlI/viwE3fqve4iIQeAWJ?blocks=hide
 - Create and reference an Airtable for initial monster mutations. 
 - Create 6 different modifier buttons that affect the monsters initial stats.
 - Store the monster mutation results and post them to Airtable.
-- Create index and results page to house your monster mutation information.
-- Post your creations to an additional Airtable table
+- Create results page to house your monster mutation information.
+- Post your creations to an additional Airtable table.
 
 #### PostMVP  
 
+- More Complex Mutations
+- Monster Index
 - Add more monster bases (up from just Goblin)
 - Animations for Monster Mutation Components
 - Add more modifiers with more game component effects instead of just stats (advantage on attacks, free action disengaging etc.)
