@@ -4,7 +4,7 @@ import { Link, Route } from "react-router-dom";
 function Intro() {
   return (
     <div>
-      <h3>INTRO</h3>
+      <h3>Intro text blehh</h3>
       <div>
         <Link to={"/Main"}>
           <p>CREATE</p>

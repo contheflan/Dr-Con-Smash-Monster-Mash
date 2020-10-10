@@ -1,21 +1,63 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
-import { baseURL } from "./constants";
+import { baseURL, key } from "./constants";
 
-function Main(props) {
+function Main() {
+  const [monster, setMonster] = useState("");
+  const [mutation, setMutation] = useState("");
+
+  // const [getLocalMonster, setLocalMonster] = useState([
+  //   {
+  //     name: "Goblin",
+  //     STR: 8,
+  //     DEX: 14,
+  //     CON: 10,
+  //     INT: 10,
+  //     WIS: 8,
+  //     CHA: 8,
+  //   }
+  // ]);
+  useEffect(() => {
+    // const getMonster = async () => {
+    //   const airtableURL = `${baseURL}/monsters`;
+    //   const response = await axios.get(airtableURL, {
+    //     headers: {
+    //       Authorization: `Bearer ${key}`,
+    //     },
+    //   });
+    //   setMonster(response.data.records[0].fields);
+    // };
+    // getMonster();
+    const newMutation = async () => {
+      const airtableURL = `${baseURL}/MUTATIONS`;
+      const response = await axios.get(airtableURL, {
+        headers: {
+          Authorization: `Bearer ${key}`,
+        },
+      });
+      setMutation(response.data.records);
+      // console.log(response.data.records);
+    };
+    newMutation();
+  }, []);
   return (
     <div>
       <h3>ACH!</h3>
-
-      {props.monster && (
+      {mutation &&
+        mutation
+          .filter((field) => field.TYPE === "STR")
+          .map((strMonster) => <p>{strMonster.Name}</p>)}
+      {monster && (
         <div>
-          <h2>{props.monster.Name}</h2>
+          <h2>{monster.Name}</h2>
           <p>
-            STR:{props.monster.STR} DEX:{props.monster.DEX} CON:
-            {props.monster.CON} INT:
-            {props.monster.INT} WIS:{props.monster.WIS} CHA:
-            {props.monster.CHA}
+            STR:{monster.STR} DEX:{monster.DEX} CON:
+            {monster.CON} INT:
+            {monster.INT} WIS:{monster.WIS} CHA:
+            {monster.CHA}
           </p>
+          <p>{monster.Image.id}</p>
         </div>
       )}
     </div>

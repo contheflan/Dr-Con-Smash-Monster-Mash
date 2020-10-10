@@ -8,31 +8,7 @@ import Results from "./Results";
 import "./App.css";
 
 function App() {
-  const [monster, setMonster] = useState("");
-  // const [getLocalMonster, setLocalMonster] = useState([
-  //   {
-  //     name: "Goblin",
-  //     STR: 8,
-  //     DEX: 14,
-  //     CON: 10,
-  //     INT: 10,
-  //     WIS: 8,
-  //     CHA: 8,
-  //   }
-  // ]);
-  useEffect(() => {
-    const getMonster = async () => {
-      const airtableURL = baseURL;
-      const response = await axios.get(airtableURL, {
-        headers: {
-          Authorization: `Bearer ${key}`,
-        },
-      });
-      setMonster(response.data.records[0].fields);
-    };
-    getMonster();
-  });
-
+  
   return (
     <div className="App">
       <body>
@@ -41,7 +17,9 @@ function App() {
           <Intro />
         </Route>
         <Route exact path="/Main">
-          <Main />
+          <Main
+          
+          />
         </Route>
       </body>
     </div>
