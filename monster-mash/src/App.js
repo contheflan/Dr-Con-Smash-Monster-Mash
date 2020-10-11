@@ -8,7 +8,6 @@ import Results from "./Results";
 import "./App.css";
 
 function App() {
-  
   return (
     <div className="App">
       <body>
@@ -17,9 +16,7 @@ function App() {
           <Intro />
         </Route>
         <Route exact path="/Main">
-          <Main
-          
-          />
+          <Main />
         </Route>
       </body>
     </div>
