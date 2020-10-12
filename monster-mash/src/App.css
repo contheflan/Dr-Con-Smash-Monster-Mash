@@ -1,3 +1,7 @@
+* {
+  /* background-color: black; */
+}
+
 .layout {
   display: grid;
   grid-template-areas:
@@ -24,11 +28,11 @@
 }
 
 .Intro-text {
-  position: relative;
-  margin: 0 auto;
+  text-align: block;
   overflow: hidden;
-  white-space: wrap;
-  animation: type 4s steps(44) 1s 1 normal both;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: type 4s steps(35, end) 1s 1 normal both;
 }
 
 @keyframes type {
@@ -36,7 +40,7 @@
     width: 0;
   }
   to {
-    width: 100%;
+    height: 100px;
   }
 }
 
@@ -81,6 +85,11 @@ span {
 .Mutation-button {
   background-image: url("assets/riveted-plates.jpg");
   max-width: 80%;
+  margin: 10px;
+  font-size: 30px;
+  border-radius: 10%;
+  color: white;
+  font-family: "VT323", monospace;
 }
 
 .Stat-text {

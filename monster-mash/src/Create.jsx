@@ -3,11 +3,8 @@ import { baseURL, key } from "./constants";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MutationList from "./MutationList";
-function Create() {
-  const [mutations, setMutations] = useState({});
-  const [monster, setMonster] = useState("");
+function Create(props) {
   const [roll, setRoll] = useState({});
-
   useEffect(() => {
     const getMonster = async () => {
       const airtableURL = `${baseURL}/monsters`;
@@ -16,7 +13,7 @@ function Create() {
           Authorization: `Bearer ${key}`,
         },
       });
-      setMonster(response.data.records[0].fields);
+      props.setMonster(response.data.records[0].fields);
     };
     getMonster();
   }, []);
@@ -28,16 +25,13 @@ function Create() {
           Authorization: `Bearer ${key}`,
         },
       });
-      // so here we're assuming we've got the data from airtable
       const { records } = response.data;
       // we're taking the data and using the .reduce() function on it
       // this function will "reduce" the array to one element, in this case...
       // ...an object with a key for each stat.
-      // mutations is now an object with six keys, each of which store the mutations
-      // that fall under that stat.
+      // mutations is now an object with six keys, each of which store the mutations that fall under that stat.
       const newMutations = records.reduce(
         (acc, curr) => {
-          // using bracket notation to say acc['CHA'] for example
           acc[curr.fields.TYPE].push(curr);
           return acc;
         },
@@ -50,7 +44,7 @@ function Create() {
           CHA: [],
         }
       );
-      setMutations(newMutations);
+      props.setMutations(newMutations);
       // need to apply newMutation to the dice roll function
     };
     getMutation();
@@ -59,19 +53,19 @@ function Create() {
   return (
     <div className="Monster-Info">
       <h3>ACH!</h3>
-      {monster && (
+      {props.monster && (
         <div>
-          <h2>{monster.Name}</h2>
+          <h2>{props.monster.Name}</h2>
           <p>
-            STR:{monster.STR} DEX:{monster.DEX} CON:
-            {monster.CON} INT:
-            {monster.INT} WIS:{monster.WIS} CHA:
-            {monster.CHA}
+            STR:{props.monster.STR} DEX:{props.monster.DEX} CON:
+            {props.monster.CON} INT:
+            {props.monster.INT} WIS:{props.monster.WIS} CHA:
+            {props.monster.CHA}
           </p>
-          <img src={monster.Image[0].url}></img>
+          <img src={props.monster.Image[0].url}></img>
         </div>
       )}
-      <MutationList mutations={mutations} roll={roll} setRoll={setRoll} />
+      <MutationList mutations={props.mutations} setMutations={props.setMutations} roll={roll} setRoll={setRoll} />
     </div>
   );
 }
