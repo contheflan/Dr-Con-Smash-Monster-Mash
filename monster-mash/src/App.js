@@ -3,22 +3,19 @@ import { Link, Route } from "react-router";
 import axios from "axios";
 import { baseURL, key } from "./constants";
 import Intro from "./Intro";
-import Main from "./Main";
+import Create from "./Create";
 import Results from "./Results";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <body>
-        <h1>Hello Gore-ld</h1>
         <Route exact path="/">
           <Intro />
         </Route>
-        <Route exact path="/Main">
-          <Main />
+        <Route exact path="/Create">
+          <Create />
         </Route>
-      </body>
     </div>
   );
 }

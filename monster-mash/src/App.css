@@ -1,4 +1,80 @@
+.layout {  
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "header header header header header"
+    "mutation monster monster monster mutation"
+    "mutation monster monster monster mutation"
+    "mutation monster monster monster mutation"
+    "footer footer footer footer footer"
+    "footer footer footer footer footer";
+}
+
 .App {
+
+  text-align: center;
+  font-family: "VT323", monospace;
+}
+
+.Intro {
+  margin: 30px;
+  background-color: black;
+  color: rgb(254, 241, 241);
+  font-size: 35px;
+  font-family: "VT323", monospace;
+}
+
+.Intro-text {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: wrap;
+  animation: type 4s steps(44) 1s 1 normal both;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.Create-button {
+  color: greenyellow;
+  text-decoration: none;
+  margin-top: 0;
+  padding: 0px 0px 20px 0px;
+  font-size: 100px;
+}
+.Create-button:hover {
+  color: red;
+  background-color: greenyellow;
+}
+
+span {
+  color: red;
+}
+
+.Monster-Info {
+  grid-area: "monster";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 30px;
   background-color: rgb(145, 139, 139);
   text-align: center;
+  /* display: flex; */
+}
+
+.Mutations {
+  grid-area: "mutation";
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: ;
+  background-image: url(assets/riveted-plates.jpg);
+  background: #cccccc;
+  max-width: 80%;
+  max-height: 80%;
+  margin: 0 auto;
 }
