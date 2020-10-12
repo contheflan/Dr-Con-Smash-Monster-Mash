@@ -5,10 +5,10 @@ const MutationList = (props) => {
   const randomRoll = (array) => Math.floor(Math.random() * array.length);
   const mutationLists = Object.entries(props.mutations).map(([stat, mutas]) => (
     <div className="Mutations">
-      <h4>{stat}</h4>
-      {props.roll[stat] && <h5>{props.roll[stat].fields.Name}</h5>}
+      <p className="Stat-text">{stat}</p>
+      {props.roll[stat] && <p className="mutation-text">{props.roll[stat].fields.Name}</p>}
       {/* THANKS SOLEIL */}
-      <button
+      <button className="Mutation-button"
         onClick={() => {
           props.setRoll((prevRoll) => ({
             ...prevRoll,

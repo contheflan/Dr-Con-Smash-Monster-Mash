@@ -1,4 +1,4 @@
-.layout {  
+.layout {
   display: grid;
   grid-template-areas:
     "header header header header header"
@@ -11,7 +11,6 @@
 }
 
 .App {
-
   text-align: center;
   font-family: "VT323", monospace;
 }
@@ -65,16 +64,25 @@ span {
   background-color: rgb(145, 139, 139);
   text-align: center;
   /* display: flex; */
+  font-family: "VT323", monospace;
 }
 
 .Mutations {
+  border-radius: 10%;
   grid-area: "mutation";
-  display: grid;
   grid-gap: 20px;
-  grid-template-rows: ;
-  background-image: url(assets/riveted-plates.jpg);
   background: #cccccc;
+  max-width: 75%;
+  max-height: 20%;
+  height: 20%;
+  margin: 0px 0px 20px 20px;
+}
+
+.Mutation-button {
+  background-image: url("assets/riveted-plates.jpg");
   max-width: 80%;
-  max-height: 80%;
-  margin: 0 auto;
+}
+
+.Stat-text {
+  padding: 0;
 }
