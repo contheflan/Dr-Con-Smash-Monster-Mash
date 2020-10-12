@@ -3,7 +3,7 @@ import { baseURL, key } from "./constants";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MutationList from "./MutationList";
-function Main() {
+function Create() {
   const [mutations, setMutations] = useState({});
   const [monster, setMonster] = useState("");
   const [roll, setRoll] = useState({});
@@ -76,4 +76,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Create;
