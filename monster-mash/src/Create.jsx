@@ -20,8 +20,10 @@ function Create(props) {
   }, []);
 
   return (
-    <div className="Monster-info">
+    <div className="Create-div">
+      <header>
       <Link className="Back" to="/">Back</Link>
+     </header>
       {Object.keys(props.monster).length > 0 && (
         <div>
           <p className="Monster-name">{props.monster.Name}</p>
@@ -31,9 +33,11 @@ function Create(props) {
             {props.monster.INT} WIS:{props.monster.WIS} CHA:
             {props.monster.CHA}
           </p>
-          <img className="Monster-portrait"src={props.monster.Image[0].url}></img>
+          <img className="Monster-portrait" src={props.monster.Image[0].url}></img>
+          <nav>
           <input className="Monster-entry" type="text" placeholder="Name"></input>
           <button className="Mutation-button">PUBLISH YOUR ABOMINATION</button>
+          </nav>
         </div>
       )}
       <MutationList randomRoll={props.randomRoll} monster={props.monster} setMonster={props.setMonster} mutations={props.mutations} setMutations={props.setMutations} roll={roll} setRoll={setRoll} />

@@ -5,11 +5,11 @@ function Intro() {
   return (
     <div className="Intro">
       <img className="Intro-img" src={castle} alt="boo!"></img>
-      <h3 className="Intro-text">
+      <p>
         The wind howls and the moor shimmers with the unrelenting storm. You
         take your final sip from your ancestral cask of Cyrodilic Brandy. The
         night is young, it's time to create something... <span>MONSTEROUS</span>
-      </h3>
+      </p>
       <Link to={"/Create"}>
         <a className="Create-button">CREATE</a>
       </Link>

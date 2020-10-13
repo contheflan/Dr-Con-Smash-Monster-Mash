@@ -16,7 +16,6 @@ function App() {
       </Route>
       <Route exact path="/Create">
         <Create
-        
           randomRoll={randomRoll}
           monster={monster}
           setMonster={setMonster}

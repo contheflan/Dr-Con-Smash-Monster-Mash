@@ -1,6 +1,7 @@
 import { baseURL, key } from "./constants";
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Button from "./Button";
 const MutationList = (props) => {
   const getModifiedFields = (fieldName) => {
     const modifiedFields = [];
@@ -55,6 +56,7 @@ const MutationList = (props) => {
     };
     getMutation();
   }, []);
+
   const mutationLists = Object.entries(props.mutations).map(([stat, mutas]) => (
     <div className="Mutations">
       <p className="Stat-text">{stat}</p>
@@ -62,23 +64,16 @@ const MutationList = (props) => {
         <p className="mutation-text">{props.roll[stat].fields.Name}</p>
       )}
       {/* THANKS SOLEIL */}
-      <button
-        className="Mutation-button"
-        onClick={() => {
-          const updatedStat = mutas[props.randomRoll(mutas)];
-          props.setRoll((prevRoll) => ({
-            ...prevRoll,
-            [stat]: updatedStat,
-          }));
-          const updatedMonster = { ...props.monster };
-          getModifiedFields(updatedStat.fields.Name).forEach(
-            (mutas) => (updatedMonster[mutas] += updatedStat.fields[mutas])
-          );
-          props.setMonster(updatedMonster);
-        }}
-      >
-        NEW MUTATION
-      </button>
+
+      <Button
+        mutas={mutas}
+        stat={stat}
+        setRoll={props.setRoll}
+        randomRoll={props.randomRoll}
+        getModifiedFields={getModifiedFields}
+        setMonster={props.setMonster}
+        monster={props.monster}
+      />
     </div>
   ));
   return <div className="Mutation-container">{mutationLists}</div>;
