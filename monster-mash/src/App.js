@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Route } from "react-router";
-import Intro from "./Intro";
-import Create from "./Create";
+import Intro from "./components/Intro";
+import Create from "./components/Create";
 // import Results from "./Results";
 import "./App.css";
 

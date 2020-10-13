@@ -1,4 +1,4 @@
-import { baseURL, key } from "./constants";
+import { baseURL, key } from "../constants";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Button from "./Button";
@@ -61,7 +61,7 @@ const MutationList = (props) => {
     <div className="Mutations">
       <p className="Stat-text">{stat}</p>
       {props.roll[stat] && (
-        <p className="mutation-text">{props.roll[stat].fields.Name}</p>
+        <p className="Mutation-text">{props.roll[stat].fields.Name}</p>
       )}
       {/* THANKS SOLEIL */}
 
@@ -76,7 +76,7 @@ const MutationList = (props) => {
       />
     </div>
   ));
-  return <div className="Mutation-container">{mutationLists}</div>;
+  return <div>{mutationLists}</div>;
 };
 
 export default MutationList;

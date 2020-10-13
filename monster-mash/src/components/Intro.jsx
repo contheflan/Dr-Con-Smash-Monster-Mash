@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import castle from "./assets/cherry-castle-rain.gif";
+import castle from ".././assets/cherry-castle-rain.gif";
 function Intro() {
   return (
     <div className="Intro">

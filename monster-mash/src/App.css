@@ -1,19 +1,18 @@
 * {
   border: 1px solid black;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .App {
-  /* justify-content: center; */
   background-color: black;
   text-align: center;
   font-family: "VT323", monospace;
 }
 
 .Intro {
-  margin: 0 auto;
+  margin: 0;
   background-color: black;
   color: rgb(254, 241, 241);
   font-family: "VT323", monospace;
@@ -46,26 +45,21 @@ span {
 
 .Create-div {
   display: grid;
+  grid-gap: 5px;
   grid-template-areas:
     "back header header header header"
     "back header header header header"
-    "mutation image image image mutation"
-    "mutation image image image mutation"
-    "mutation image image image mutation"
+    "mutation mutation image image image"
+    "mutation mutation image image image"
+    "mutation mutation image image image"
     "nav name name submit nav"
     "nav publish publish publish trash"
     "footer footer footer footer footer";
-  margin: 10px auto;
+  color: white;
   font-size: 30px;
-  background-color: rgb(145, 139, 139);
+  background-image: url("assets/lab-background.jpg");
   text-align: center;
   font-family: "VT323", monospace;
-  height: 100vh;
-  width: 100vw;
-}
-
-.Monster-container {
-  grid-area: "mutation";
 }
 
 .Back {
@@ -75,7 +69,11 @@ span {
 
 header {
   display: flex;
-  height: 5vh;
+  height: 10%;
+}
+
+.Monster-div {
+  display: grid;
 }
 
 .Monster-name,
@@ -98,23 +96,23 @@ header {
 }
 
 .Mutations {
+  display: grid;
+  justify-content: center;
   grid-area: "mutation";
   font-size: 25px;
   border-radius: 10%;
   width: 200px;
   max-width: 200px;
-  height: 25vh;
   margin: 10px auto;
   box-shadow: black 5px 2px;
   background-image: url("assets/metal-texture.png");
 }
 
 .Mutation-button {
+  grid-row: 2 1fr;
   box-shadow: black 5px 2px;
   color: rgb(226, 255, 154);
   margin: 0 auto;
-  padding: 5px;
-  width: 20vh;
   font-size: 25px;
   border-radius: 20%;
   font-family: "VT323", monospace;
@@ -124,7 +122,6 @@ header {
 .Mutation-button:hover {
   background-image: url("assets/slime.png");
   box-shadow: rgb(136, 191, 53) 2px 2px 2px 2px;
-  height: 50px;
 }
 
 .Mutation-text {

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { baseURL, key } from "./constants";
+import { baseURL, key } from "../constants";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MutationList from "./MutationList";
@@ -25,7 +25,7 @@ function Create(props) {
       <Link className="Back" to="/">Back</Link>
      </header>
       {Object.keys(props.monster).length > 0 && (
-        <div>
+        <div className="Monster-div">
           <p className="Monster-name">{props.monster.Name}</p>
           <p className="Monster-stats">
             STR:{props.monster.STR} DEX:{props.monster.DEX} CON:
