@@ -4,7 +4,7 @@ import castle from "./assets/cherry-castle-rain.gif";
 function Intro() {
   return (
     <div className="Intro">
-      <img src={castle} alt="boo!"></img>
+      <img className="Intro-img" src={castle} alt="boo!"></img>
       <h3 className="Intro-text">
         The wind howls and the moor shimmers with the unrelenting storm. You
         take your final sip from your ancestral cask of Cyrodilic Brandy. The

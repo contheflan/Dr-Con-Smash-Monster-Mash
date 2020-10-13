@@ -9,8 +9,6 @@ function App() {
   const [mutations, setMutations] = useState({});
   const [monster, setMonster] = useState({});
   const randomRoll = (array) => Math.floor(Math.random() * array.length);
-  const [removeButton, setRemoveButton] = useState(true);
-  const remove = () => setRemoveButton(false)
   return (
     <div className="App">
       <Route exact path="/">
@@ -18,9 +16,7 @@ function App() {
       </Route>
       <Route exact path="/Create">
         <Create
-          removeButton={removeButton}
-          setRemoveButton={setRemoveButton}
-          remove={remove}
+        
           randomRoll={randomRoll}
           monster={monster}
           setMonster={setMonster}

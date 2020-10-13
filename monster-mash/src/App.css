@@ -1,9 +1,11 @@
 * {
   border: 1px solid black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
-  display: flex;
   justify-content: center;
   background-color: black;
   text-align: center;
@@ -11,16 +13,20 @@
 }
 
 .Intro {
-  margin: 30px;
+  margin: 0 auto;
   background-color: black;
   color: rgb(254, 241, 241);
-  font-size: 35px;
   font-family: "VT323", monospace;
+  font-size:25px;
+  height: 100vh;
+  width: 100vw;
 }
 
-.Intro-text {
-  margin: 0 auto;
+.Intro-img {
+  width: 75%;
+  height: 70%;
 }
+
 
 span {
   color: rgb(154, 16, 16);
@@ -28,9 +34,10 @@ span {
 
 .Create-button {
   color: greenyellow;
-  margin-top: 0;
-  padding: 0px 0px 20px 0px;
-  font-size: 100px;
+  font-size: 75px;
+  height: 25%;
+  width: 25%;
+  text-decoration: none;
 }
 
 .Create-button:hover {
@@ -39,25 +46,41 @@ span {
 }
 
 .Back {
-  display:grid;
+  justify-content: flex-end;
 }
 
 .Monster-info {
-  display: flex;
-  margin: 10px;
+  margin: 10px auto;
   font-size: 30px;
   background-color: rgb(145, 139, 139);
   text-align: center;
   font-family: "VT323", monospace;
+  display: grid;
+  height: 720px;
+  width: 90vh;
+}
+
+.Monster-name,
+.Monster-stats {
+  margin: 5px auto;
+  font-family: "VT323", monospace;
 }
 
 .Monster-portrait {
+  width: 50vh;
+  height: 50vh;
   border-radius: 5%;
-  border: brown;
+  border: solid brown 1px;
+  box-shadow: chartreuse 5px 2px;
+}
+
+.Monster-entry {
+  font-family: "VT323", monospace;
+  width: 200px;
+  max-width: 200px;
 }
 
 .Monster-container {
-  display:flex;
 }
 
 .Mutations {
@@ -75,7 +98,7 @@ span {
 .Mutation-button {
   box-shadow: black 5px 2px;
   color: rgb(226, 255, 154);
-  margin: 10px;
+  margin: 0 auto;
   padding: 5px;
   width: 20vh;
   font-size: 25px;
@@ -87,7 +110,7 @@ span {
 .Mutation-button:hover {
   background-image: url("assets/slime.png");
   box-shadow: rgb(136, 191, 53) 2px 2px 2px 2px;
-  height: 45px;
+  height: 50px;
 }
 
 .Mutation-text {
@@ -97,4 +120,36 @@ span {
 .Stat-text {
   padding: 0;
   font-size: 50px;
+}
+
+@media screen and (max-width: 1024px){
+  .Intro {
+    background-color: black;
+    color: rgb(254, 241, 241);
+    font-family: "VT323", monospace;
+    font-size: 40px;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .Intro-img {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .Intro {
+    background-color: black;
+    color: rgb(254, 241, 241);
+    font-family: "VT323", monospace;
+    font-size: 25px;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .Intro-img {
+    width: 100%;
+    height: 60%;
+  }
 }

@@ -24,17 +24,19 @@ function Create(props) {
       <Link className="Back" to="/">Back</Link>
       {Object.keys(props.monster).length > 0 && (
         <div>
-          <h2>{props.monster.Name}</h2>
-          <p>
+          <p className="Monster-name">{props.monster.Name}</p>
+          <p className="Monster-stats">
             STR:{props.monster.STR} DEX:{props.monster.DEX} CON:
             {props.monster.CON} INT:
             {props.monster.INT} WIS:{props.monster.WIS} CHA:
             {props.monster.CHA}
           </p>
           <img className="Monster-portrait"src={props.monster.Image[0].url}></img>
+          <input className="Monster-entry" type="text" placeholder="Name"></input>
+          <button className="Mutation-button">PUBLISH YOUR ABOMINATION</button>
         </div>
       )}
-      <MutationList remove={props.remove} removeButton={props.removeButton} setRemoveButton={props.setRemoveButton} randomRoll={props.randomRoll} monster={props.monster} setMonster={props.setMonster} mutations={props.mutations} setMutations={props.setMutations} roll={roll} setRoll={setRoll} />
+      <MutationList randomRoll={props.randomRoll} monster={props.monster} setMonster={props.setMonster} mutations={props.mutations} setMutations={props.setMutations} roll={roll} setRoll={setRoll} />
     </div>
   );
 }
