@@ -53,7 +53,7 @@ function Create(props) {
   return (
     <div className="Monster-Info">
       <h3>ACH!</h3>
-      {props.monster && (
+      {Object.keys(props.monster).length > 0 && (
         <div>
           <h2>{props.monster.Name}</h2>
           <p>
@@ -62,10 +62,10 @@ function Create(props) {
             {props.monster.INT} WIS:{props.monster.WIS} CHA:
             {props.monster.CHA}
           </p>
-          <img src={props.monster.Image[0].url}></img>
+          <img className="Monster-portrait"src={props.monster.Image[0].url}></img>
         </div>
       )}
-      <MutationList mutations={props.mutations} setMutations={props.setMutations} roll={roll} setRoll={setRoll} />
+      <MutationList monster={props.monster} setMonster={props.setMonster} mutations={props.mutations} setMutations={props.setMutations} roll={roll} setRoll={setRoll} />
     </div>
   );
 }

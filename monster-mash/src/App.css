@@ -1,8 +1,4 @@
-* {
-  /* background-color: black; */
-}
-
-.layout {
+/* .layout {
   display: grid;
   grid-template-areas:
     "header header header header header"
@@ -12,9 +8,10 @@
     "mutation monster monster monster mutation"
     "footer footer footer footer footer"
     "footer footer footer footer footer";
-}
+} */
 
 .App {
+  background-color: black;
   text-align: center;
   font-family: "VT323", monospace;
 }
@@ -28,9 +25,8 @@
 }
 
 .Intro-text {
-  text-align: block;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: wrap;
   margin: 0 auto;
   animation: type 4s steps(35, end) 1s 1 normal both;
 }
@@ -51,47 +47,63 @@
   padding: 0px 0px 20px 0px;
   font-size: 100px;
 }
+
 .Create-button:hover {
   color: red;
   background-color: greenyellow;
 }
 
 span {
-  color: red;
+  color: rgb(154, 16, 16);
 }
 
 .Monster-Info {
-  grid-area: "monster";
+  /* grid-area: "monster"; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 30px;
   background-color: rgb(145, 139, 139);
   text-align: center;
-  /* display: flex; */
   font-family: "VT323", monospace;
+}
+
+.Monster-portrait{
+  border-radius: 15%;
 }
 
 .Mutations {
+  text-decoration-color: green;
+  font-size: 25px;
   border-radius: 10%;
-  grid-area: "mutation";
+  /* grid-area: "mutation"; */
   grid-gap: 20px;
-  background: #cccccc;
   max-width: 75%;
-  max-height: 20%;
-  height: 20%;
   margin: 0px 0px 20px 20px;
+  box-shadow: black 5px 2px;
+  background-image: url("assets/metal-texture.png");
 }
 
 .Mutation-button {
-  background-image: url("assets/riveted-plates.jpg");
-  max-width: 80%;
+  background-image: url("assets/slime.png");
+  color: rgb(226, 255, 154);
   margin: 10px;
-  font-size: 30px;
-  border-radius: 10%;
-  color: white;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 20%;
   font-family: "VT323", monospace;
+}
+
+.Mutation-button:hover {
+  background-image: url("assets/dark-slime.png");
+}
+
+.Mutation-text {
+  max-width: 80%;
+  margin-top: 10px;
+  padding: 10px;
 }
 
 .Stat-text {
   padding: 0;
+  font-size: 50px;
 }

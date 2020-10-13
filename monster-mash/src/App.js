@@ -9,14 +9,19 @@ import "./App.css";
 
 function App() {
   const [mutations, setMutations] = useState({});
-  const [monster, setMonster] = useState("");
+  const [monster, setMonster] = useState({});
   return (
     <div className="App">
       <Route exact path="/">
         <Intro />
       </Route>
       <Route exact path="/Create">
-        <Create monster={monster} setMonster={setMonster} mutations={mutations} setMutations={setMutations}/>
+        <Create
+          monster={monster}
+          setMonster={setMonster}
+          mutations={mutations}
+          setMutations={setMutations}
+        />
       </Route>
     </div>
   );
