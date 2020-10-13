@@ -1,16 +1,10 @@
-/* .layout {
-  display: grid;
-  grid-template-areas:
-    "header header header header header"
-    "header header header header header"
-    "mutation monster monster monster mutation"
-    "mutation monster monster monster mutation"
-    "mutation monster monster monster mutation"
-    "footer footer footer footer footer"
-    "footer footer footer footer footer";
-} */
+* {
+  border: 1px solid black;
+}
 
 .App {
+  display: flex;
+  justify-content: center;
   background-color: black;
   text-align: center;
   font-family: "VT323", monospace;
@@ -25,24 +19,15 @@
 }
 
 .Intro-text {
-  overflow: hidden;
-  white-space: wrap;
   margin: 0 auto;
-  animation: type 4s steps(35, end) 1s 1 normal both;
 }
 
-@keyframes type {
-  from {
-    width: 0;
-  }
-  to {
-    height: 100px;
-  }
+span {
+  color: rgb(154, 16, 16);
 }
 
 .Create-button {
   color: greenyellow;
-  text-decoration: none;
   margin-top: 0;
   padding: 0px 0px 20px 0px;
   font-size: 100px;
@@ -53,54 +38,60 @@
   background-color: greenyellow;
 }
 
-span {
-  color: rgb(154, 16, 16);
+.Back {
+  display:grid;
 }
 
-.Monster-Info {
-  /* grid-area: "monster"; */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.Monster-info {
+  display: flex;
+  margin: 10px;
   font-size: 30px;
   background-color: rgb(145, 139, 139);
   text-align: center;
   font-family: "VT323", monospace;
 }
 
-.Monster-portrait{
-  border-radius: 15%;
+.Monster-portrait {
+  border-radius: 5%;
+  border: brown;
+}
+
+.Monster-container {
+  display:flex;
 }
 
 .Mutations {
-  text-decoration-color: green;
+  flex-basis: 30%;
   font-size: 25px;
   border-radius: 10%;
-  /* grid-area: "mutation"; */
-  grid-gap: 20px;
-  max-width: 75%;
-  margin: 0px 0px 20px 20px;
+  width: 200px;
+  max-width: 200px;
+  height: 25vh;
+  margin: 10px auto;
   box-shadow: black 5px 2px;
   background-image: url("assets/metal-texture.png");
 }
 
 .Mutation-button {
-  background-image: url("assets/slime.png");
+  box-shadow: black 5px 2px;
   color: rgb(226, 255, 154);
   margin: 10px;
   padding: 5px;
+  width: 20vh;
   font-size: 25px;
   border-radius: 20%;
   font-family: "VT323", monospace;
-}
-
-.Mutation-button:hover {
   background-image: url("assets/dark-slime.png");
 }
 
+.Mutation-button:hover {
+  background-image: url("assets/slime.png");
+  box-shadow: rgb(136, 191, 53) 2px 2px 2px 2px;
+  height: 45px;
+}
+
 .Mutation-text {
-  max-width: 80%;
-  margin-top: 10px;
-  padding: 10px;
+  max-width: 70%;
 }
 
 .Stat-text {
