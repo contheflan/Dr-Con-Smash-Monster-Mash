@@ -58,14 +58,14 @@ const MutationList = (props) => {
   }, []);
 
   const mutationLists = Object.entries(props.mutations).map(([stat, mutas]) => (
-    <div className="Mutations">
+    <div className="Mutation-text">
       <p className="Stat-text">{stat}</p>
       {props.roll[stat] && (
-        <p className="Mutation-text">{props.roll[stat].fields.Name}</p>
+      <p >{props.roll[stat].fields.Name}</p>
       )}
       {/* THANKS SOLEIL */}
 
-      <Button
+      <Button 
         mutas={mutas}
         stat={stat}
         setRoll={props.setRoll}

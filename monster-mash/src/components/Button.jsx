@@ -5,8 +5,7 @@ const Button = (props) => {
   return (
     <>
       {toggle && (
-        <button
-          className="Mutation-button"
+        <button className="Mutation-button"
           onClick={() => {
             const updatedStat = props.mutas[props.randomRoll(props.mutas)];
             props.setRoll((prevRoll) => ({
