@@ -8,6 +8,7 @@ import "./App.css";
 function App() {
   const [mutations, setMutations] = useState({});
   const [monster, setMonster] = useState({});
+  const [monsterId, setMonsterId] = useState([]);
   const randomRoll = (array) => Math.floor(Math.random() * array.length);
   return (
     <div className="App">
@@ -19,6 +20,8 @@ function App() {
           randomRoll={randomRoll}
           monster={monster}
           setMonster={setMonster}
+          monsterId={monsterId}
+          setMonsterId={setMonsterId}
           mutations={mutations}
           setMutations={setMutations}
         />

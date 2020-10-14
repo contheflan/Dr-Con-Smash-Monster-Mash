@@ -7,15 +7,13 @@ import MutationList from "./MutationList";
 function Create(props) {
   const [roll, setRoll] = useState({});
   const [name, setName] = useState("");
-  // const [newMonster, setNewMonster] = useState({})
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // setNewMonster({
-    //   "STR": `${props.monster.STR}`,
-    // })
+    let { CREATIONS, Name, Image, ...monsterFields } = props.monster;
     let fields = {
-      name,
-      ...props.monster,
+      Monster: props.monsterId,
+      Name: name,
+      ...monsterFields,
     };
     await axios.post(
       `${baseURL}/creations`,
@@ -36,6 +34,7 @@ function Create(props) {
         },
       });
       props.setMonster(response.data.records[0].fields);
+      props.setMonsterId([response.data.records[0].id]);
     };
     getMonster();
   }, []);
@@ -43,7 +42,7 @@ function Create(props) {
   return (
     <div>
       <header>
-        <Link style={{textDecoration: 'none'}} className="Back" to="/">
+        <Link style={{ textDecoration: "none" }} className="Back" to="/">
           Back
         </Link>
         Spice up this boring ol' {props.monster.Name} with wild and weird new
@@ -56,7 +55,11 @@ function Create(props) {
             <div>
               <p className="Monster-name">{props.monster.Name}</p>
               <div>
-                <p className="Monster-stats"> STR:{props.monster.STR} DEX:{props.monster.DEX} CON: {props.monster.CON} INT:{props.monster.INT} WIS:{props.monster.WIS} CHA:{props.monster.CHA}
+                <p className="Monster-stats">
+                  {" "}
+                  STR:{props.monster.STR} DEX:{props.monster.DEX} CON:{" "}
+                  {props.monster.CON} INT:{props.monster.INT} WIS:
+                  {props.monster.WIS} CHA:{props.monster.CHA}
                 </p>
               </div>
               <div>
