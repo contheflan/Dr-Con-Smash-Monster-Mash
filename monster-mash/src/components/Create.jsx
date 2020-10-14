@@ -1,17 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { baseURL, key } from "../constants";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MutationList from "./MutationList";
 
 function Create(props) {
+  const [monster, setMonster] = useState({});
+  const [monsterId, setMonsterId] = useState([]);
   const [roll, setRoll] = useState({});
   const [name, setName] = useState("");
   const handleSubmit = async (event) => {
     event.preventDefault();
-    let { CREATIONS, Name, Image, ...monsterFields } = props.monster;
+    let { CREATIONS, Name, Image, ...monsterFields } = monster;
     let fields = {
-      Monster: props.monsterId,
+      Monster: monsterId,
       Name: name,
       ...monsterFields,
     };
@@ -24,6 +26,7 @@ function Create(props) {
         },
       }
     );
+    props.history.push("/Monsters")
   };
   useEffect(() => {
     const getMonster = async () => {
@@ -33,8 +36,8 @@ function Create(props) {
           Authorization: `Bearer ${key}`,
         },
       });
-      props.setMonster(response.data.records[0].fields);
-      props.setMonsterId([response.data.records[0].id]);
+      setMonster(response.data.records[0].fields);
+      setMonsterId([response.data.records[0].id]);
     };
     getMonster();
   }, []);
@@ -45,27 +48,27 @@ function Create(props) {
         <Link style={{ textDecoration: "none" }} className="Back" to="/">
           Back
         </Link>
-        Spice up this boring ol' {props.monster.Name} with wild and weird new
+        Spice up this boring ol' {monster.Name} with wild and weird new
         abilities! Click on each attribute to mutate and augment its mundane
-        stats. Have fun!`
+        stats. Have fun!
       </header>
       <div className="Create-div">
         <div className="Monster-div">
-          {Object.keys(props.monster).length > 0 && (
+          {Object.keys(monster).length > 0 && (
             <div>
-              <p className="Monster-name">{props.monster.Name}</p>
+              <p className="Monster-name">{monster.Name}</p>
               <div>
                 <p className="Monster-stats">
                   {" "}
-                  STR:{props.monster.STR} DEX:{props.monster.DEX} CON:{" "}
-                  {props.monster.CON} INT:{props.monster.INT} WIS:
-                  {props.monster.WIS} CHA:{props.monster.CHA}
+                  STR:{monster.STR} DEX:{monster.DEX} CON:{" "}
+                  {monster.CON} INT:{monster.INT} WIS:
+                  {monster.WIS} CHA:{monster.CHA}
                 </p>
               </div>
               <div>
-                <img
+                <img alt="boohoo"
                   className="Monster-portrait"
-                  src={props.monster.Image[0].url}
+                  src={monster.Image[0].url}
                 ></img>
               </div>
               <footer>
@@ -89,8 +92,8 @@ function Create(props) {
           <MutationList
             className="Mutations"
             randomRoll={props.randomRoll}
-            monster={props.monster}
-            setMonster={props.setMonster}
+            monster={monster}
+            setMonster={setMonster}
             mutations={props.mutations}
             setMutations={props.setMutations}
             roll={roll}
@@ -101,4 +104,4 @@ function Create(props) {
     </div>
   );
 }
-export default Create;
+export default withRouter(Create);

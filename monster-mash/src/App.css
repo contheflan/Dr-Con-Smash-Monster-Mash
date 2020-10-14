@@ -1,6 +1,13 @@
-.App {
+body {
   background-color: rgb(0, 0, 0);
-  padding: 20px auto;
+  color: white;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  /* padding: 10px auto; */
+  margin: 0 auto;
   text-align: center;
   font-family: "VT323", monospace;
   align-items: center;
@@ -8,10 +15,7 @@
 
 .Intro {
   margin: 0 auto;
-  width: 90%;
-  height: 90%;
   display: grid;
-  grid-gap: 10px;
   grid-template-areas:
     "nav image nav"
     "nav image nav"
@@ -19,18 +23,22 @@
     "nav create nav";
   background-color: black;
   color: rgb(254, 241, 241);
-}
+  height:100vh;
+  width: 100vw;
 
-.Intro-text {
-  grid-area: "text";
-  margin: 10 auto;
-  font-size: 50px;
-  height: 150px;
 }
 
 .Intro-img {
   grid-area: "image";
-  height: 720px;
+  height: 60vh;
+}
+
+.Intro-text {
+  grid-area: "text";
+  margin: 0 auto;
+  width: 80%;
+  font-size: 70px;
+  height: 30%;
 }
 
 span {
@@ -38,9 +46,11 @@ span {
 }
 
 .Create-button {
-  color: greenyellow;
   text-decoration: none;
-  font-size: 100px;
+  font-family: inherit;
+  background-color: black;
+  color: greenyellow;
+  font-size: 150px;
   margin: 10px auto;
 }
 
@@ -64,7 +74,7 @@ header {
 
 .Create-div {
   width: 1000px;
-  height: 970px;
+  height: 960px;
   margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr auto;
@@ -73,7 +83,7 @@ header {
     "header header header header"
     "monster monster stat stat"
     "footer footer footer footer";
-  color: white;
+  color: rgba(50, 25, 6, 0.6);
   font-size: 40px;
   background-image: url("assets/dark-lab-background.jpg");
   text-align: center;
@@ -97,7 +107,7 @@ header {
 .Monster-stats {
   margin: 25px auto;
   font-size: 50px;
-  background-image: url("assets/steel.png");
+  background-image: url("assets/metal-texture.png");
   border-radius: 5%;
 }
 
@@ -106,8 +116,8 @@ header {
   width: 500px;
   height: 500px;
   border-radius: 5%;
-  border: solid brown 1px;
-  box-shadow: chartreuse 5px 2px;
+  border: solid rgba(165, 42, 42, 0.62) 1px;
+  box-shadow: rgba(139, 255, 23, 0.264) 5px 2px;
 }
 
 .Monster-entry {
@@ -122,18 +132,20 @@ header {
   grid-area: "stat";
   margin: 0 auto;
   border-radius: 10%;
-  box-shadow: black 5px 2px;
+  border: solid brown 1px;
+  box-shadow: rgb(139, 255, 23) 5px 2px;
 }
 
 .Mutation-text {
   background-image: url("assets/rusty-red-metal.jpeg");
   width: 80%;
+  max-width: 80%;
   border-radius: 15%;
   margin: 5px auto;
-  font-size: 30px;
+  font-size: 40px;
   height: 150px;
   color: rgb(0, 0, 0);
-  text-shadow: 2px 3px rgb(54, 255, 4);
+  text-shadow: 2px 3px rgb(75, 195, 45);
 }
 
 .Mutation-button {
@@ -157,7 +169,7 @@ header {
   font-size: 50px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .Intro {
     margin: 0 auto;
     width: 100vw;
@@ -211,8 +223,6 @@ header {
   .Monster-stats {
     margin: 25px auto;
     font-size: 40px;
-    background-image: url("assets/steel.png");
-    border-radius: 5%;
   }
   
   .Monster-portrait {
@@ -246,13 +256,9 @@ header {
     margin: 5px auto;
     font-size: 30px;
     height: 150px;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 3px rgb(54, 255, 4);
   }
   
   .Mutation-button {
-    box-shadow: black 5px 2px;
-    color: rgb(226, 255, 154);
     margin: 0 auto;
     font-size: 50px;
     border-radius: 20%;

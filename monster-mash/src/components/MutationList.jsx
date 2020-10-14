@@ -1,8 +1,9 @@
 import { baseURL, key } from "../constants";
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Button from "./Button";
 const MutationList = (props) => {
+  const [mutations, setMutations] = useState({});
   const getModifiedFields = (fieldName) => {
     const modifiedFields = [];
     if (fieldName.includes("STR")) {
@@ -51,13 +52,13 @@ const MutationList = (props) => {
           CHA: [],
         }
       );
-      props.setMutations(newMutations);
+      setMutations(newMutations);
       // need to apply newMutation to the dice roll function
     };
     getMutation();
   }, []);
 
-  const mutationLists = Object.entries(props.mutations).map(([stat, mutas]) => (
+  const mutationLists = Object.entries(mutations).map(([stat, mutas]) => (
     <div className="Mutation-text">
       <p className="Stat-text">{stat}</p>
       {props.roll[stat] && (

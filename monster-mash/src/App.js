@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route } from "react-router";
 import Intro from "./components/Intro";
 import Create from "./components/Create";
-// import Results from "./Results";
+import Monsters from "./components/Monsters";
 import "./App.css";
 
 function App() {
-  const [mutations, setMutations] = useState({});
-  const [monster, setMonster] = useState({});
-  const [monsterId, setMonsterId] = useState([]);
   const randomRoll = (array) => Math.floor(Math.random() * array.length);
   return (
     <div className="App">
@@ -18,13 +15,10 @@ function App() {
       <Route exact path="/Create">
         <Create
           randomRoll={randomRoll}
-          monster={monster}
-          setMonster={setMonster}
-          monsterId={monsterId}
-          setMonsterId={setMonsterId}
-          mutations={mutations}
-          setMutations={setMutations}
         />
+      </Route>
+      <Route exact path="/Monsters">
+        <Monsters />
       </Route>
     </div>
   );
