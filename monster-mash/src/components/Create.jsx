@@ -27,7 +27,7 @@ function Create(props) {
   };
   useEffect(() => {
     const getMonster = async () => {
-      const airtableURL = `${baseURL}/monsters`;
+      const airtableURL = `${baseURL}/monsters?sort%5B0%5D%5Bfield%5D=Name&sort%5B0%5D%5Bdirection%5D=desc`;
       const response = await axios.get(airtableURL, {
         headers: {
           Authorization: `Bearer ${key}`,
