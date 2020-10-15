@@ -230,79 +230,59 @@ footer {
   }
 
   .Create-button {
-    color: greenyellow;
     text-decoration: none;
     font-size: 250px;
   }
 
   .Create-container {
-    background-image: url("assets/dark-lab-background.jpg");
     height: 100vh;
     max-height: 100vh;
     display: grid;
   }
   
   header {
-    width: 60%;
-    max-width: 60%;
+    width: 75%;
+    max-width: 75%;
     margin: 0 auto;
     padding: 10px auto;
-    font-size: 40px;
+    font-size: 35px;
     display: flex;
-  }
-
-  .Back:hover {
-    color: purple;
-    background-color: greenyellow;
+    max-height: 150px;
   }
   
   .Create-div {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr auto;
-    margin: 2vh auto;
-    color: rgb(0, 0, 0);
-    font-size: 40px;
   }
   
   .Monster-container {
     margin: 0 auto;
     border-radius: 5%;
-    height: 50%;
-    max-height: 50%;
+    height: 885px;
   }
   
   .Monster-name {
-    margin: 5px auto;
     font-size: 60px;
-    background-image: url("assets/metal-texture.png");
     border-radius: 5%;
     width: 60%;
-    border: solid rgba(165, 42, 42, 0.62) 1px;
-    box-shadow: rgba(139, 255, 23, 0.264) 5px 2px;
   }
   
   .Monster-stats {
     margin: 0 auto;
     font-size: 50px;
-    background-image: url("assets/metal-texture.png");
     width: 60%;
-    border: solid rgba(165, 42, 42, 0.62) 1px;
-    box-shadow: rgba(139, 255, 23, 0.264) 5px 2px;
   }
   
   .Monster-portrait {
     margin: 20px auto;
-    filter: blur(0.5px);
-    width: 25vw;
+    width: 45vw;
     height: 45vh;
     border-radius: 4%;
-    border: solid rgba(165, 42, 42, 0.62) 1px;
-    box-shadow: rgba(139, 255, 23, 0.264) 5px 2px;
   }
   
   .Monster-entry {
-    font-family: "VT323", monospace;
     width: 80%;
     margin: 10px auto;
     font-size: 40px;
@@ -310,7 +290,6 @@ footer {
   }
   
   footer {
-    background-image: url("assets/worn-metal-texture.jpg");
     width: 60%;
     margin: auto;
   }
@@ -320,36 +299,18 @@ footer {
     max-height: 80%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-image: url("assets/metal-texture.png");
-    border: solid brown 1px;
-    box-shadow: rgb(139, 255, 23) 5px 2px;
   }
   
   .Mutation {
     border-radius: 10%;
-    margin: 15px;
     display: inline-grid;
-    max-width: 250px;
-    background-image: url("assets/rusty-red-metal.jpeg");
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 3px rgb(137, 159, 26);
-    border: solid rgba(165, 42, 42, 0.62) 1px;
-    box-shadow: rgba(139, 255, 23, 0.264) 5px 2px;
+    max-width: 180px;
   }
   
   .Mutation-button {
     margin: 10px auto;
     font-size: 50px;
-    box-shadow: black 5px 2px;
-    color: rgb(226, 255, 154);
     border-radius: 20%;
-    font-family: "VT323", monospace;
-    background-image: url("assets/dark-slime.png");
-  }
-  
-  .Mutation-button:hover {
-    background-image: url("assets/slime.png");
-    box-shadow: rgb(136, 191, 53) 2px 2px;
   }
   
   .Stat-text {
@@ -387,28 +348,123 @@ footer {
     margin: 0 auto;
     width: 100vw;
     height: 100vh;
+    max-height: 100vh;
     display: grid;
   }
 
   .Intro-text {
-    grid-area: "text";
     width: 80%;
     max-width: 80%;
     height: 50%;
     max-height: 50%;
     margin: 0 auto;
-    font-size: 30px;
-  }
-
-  .Intro-img {
-    grid-area: "image";
-    height: 300px;
-    max-height: 300px;
+    font-size: 25px;
   }
 
   .Create-button {
-    color: greenyellow;
     text-decoration: none;
-    font-size: 70px;
+    font-size: 50px;
+  }
+
+  .Create-container {
+    height: 100vh;
+    max-height: 100vh;
+    display: grid;
+  }
+  
+  header {
+    width: 75%;
+    max-width: 75%;
+    margin: 0 auto;
+    font-size: 20px;
+    display: flex;
+  }
+  
+  .Create-div {
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr auto;
+  }
+  
+  .Monster-container {
+    margin: 0 auto;
+    border-radius: 5%;
+    height: 520px;
+  }
+  
+  .Monster-name {
+    font-size: 30px;
+    border-radius: 5%;
+    width: 60%;
+  }
+  
+  .Monster-stats {
+    margin: 0 auto;
+    font-size: 20px;
+    width: 60%;
+  }
+  
+  .Monster-portrait {
+    width: 45vw;
+    height: 30vh;
+    border-radius: 4%;
+  }
+  
+  .Monster-entry {
+    width: 70%;
+    font-size: 30px;
+    max-width: 70%;
+  }
+  
+  footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .Mutation-container {
+    max-width: 50%;
+    max-height: 95%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  
+  .Mutation {
+    border-radius: 10%;
+    display: inline-grid;
+    max-width: 180px;
+  }
+  
+  .Mutation-button {
+    margin: 10px auto;
+    font-size: 20px;
+    border-radius: 20%;
+  }
+  
+  .Stat-text {
+    font-size: 25px;
+    margin: 0;
+  }
+  
+  .Mutation-text {
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 70%;
+    text-align: center;
+  }
+  
+  .Result-container {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .Results-back {
+    align-items: flex-start;
+    font-size: 50px;
+  }
+  
+  .Results {
+    font-size: 40px;
+    margin: 15px auto;
   }
 }

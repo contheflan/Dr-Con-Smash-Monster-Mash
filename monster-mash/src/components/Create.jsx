@@ -61,7 +61,7 @@ function Create(props) {
             <div>
               <p className="Monster-stats">
                 {" "}
-                STR:{monster.STR} DEX:{monster.DEX} CON: {monster.CON} INT:
+                STR:{monster.STR} DEX:{monster.DEX} CON:{monster.CON} INT:
                 {monster.INT} WIS:
                 {monster.WIS} CHA:{monster.CHA}
               </p>

@@ -26,9 +26,9 @@ const Monsters = () => {
         <p className="Intro-text">THE GOBLIN HALL OF FAME OR WHATEVER</p>
         {creations.map((creations) => (
           <p className="Results">
-            {creations.fields.Name} STR: {creations.fields.STR} DEX:
-            {creations.fields.DEX} CON: {creations.fields.CON} INT:
-            {creations.fields.INT} WIS: {creations.fields.WIS} CHA:
+            {creations.fields.Name} STR:{creations.fields.STR} DEX:
+            {creations.fields.DEX} CON:{creations.fields.CON} INT:
+            {creations.fields.INT} WIS:{creations.fields.WIS} CHA:
             {creations.fields.CHA}
           </p>
         ))}
