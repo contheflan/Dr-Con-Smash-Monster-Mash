@@ -90,7 +90,7 @@ header {
 .Monster-container {
   background-color: rgba(255, 255, 255, 0.127);
   border: thin solid rgb(255, 255, 255);
-  
+
   margin: 15px auto;
   border-radius: 5%;
   height: 80%;
@@ -118,7 +118,7 @@ header {
 
 .Monster-portrait {
   margin: 20px auto;
-  filter: blur(.5px);
+  filter: blur(0.5px);
   width: 25vw;
   height: 45vh;
   border-radius: 4%;
@@ -153,7 +153,7 @@ footer {
 .Mutation {
   border-radius: 10%;
   margin: 15px;
-  display:inline-grid;
+  display: inline-grid;
   max-width: 250px;
   background-image: url("assets/rusty-red-metal.jpeg");
   color: rgb(0, 0, 0);
@@ -186,25 +186,34 @@ footer {
   font-size: 50px;
   margin: 0 auto;
   max-width: 70%;
-  text-align:center;
+  text-align: center;
 }
 
+.Result-container {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
 
+.Results-back {
+  align-items: flex-start;
+  font-size: 50px;
+}
 
+.Results {
+  font-size: 40px;
+  margin: 15px auto;
+}
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .Intro {
     margin: 0 auto;
     width: 100vw;
     height: 100vh;
+    max-height: 100vh;
     display: grid;
   }
 
-  nav {
-    grid-area: "nav";
-    display: grid;
-    height: 100%;
-  }
 
   .Intro-text {
     grid-area: "text";
@@ -226,79 +235,151 @@ footer {
     font-size: 250px;
   }
 
-  .Create-div {
-    padding: 20px auto;
-    width: 100%;
-    height: 100%;
-    font-size: 30px;
+  .Create-container {
+    background-image: url("assets/dark-lab-background.jpg");
+    height: 100vh;
+    max-height: 100vh;
+    display: grid;
+  }
+  
+  header {
+    width: 60%;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 10px auto;
+    font-size: 40px;
+    display: flex;
   }
 
   .Back:hover {
     color: purple;
     background-color: greenyellow;
   }
-
-  .Monster-div {
-    grid-area: "monster";
-  }
-
-  .Monster-name,
-  .Monster-stats {
-    margin: 25px auto;
+  
+  .Create-div {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    margin: 2vh auto;
+    color: rgb(0, 0, 0);
     font-size: 40px;
   }
-
+  
+  .Monster-container {
+    margin: 0 auto;
+    border-radius: 5%;
+    height: 50%;
+    max-height: 50%;
+  }
+  
+  .Monster-name {
+    margin: 5px auto;
+    font-size: 60px;
+    background-image: url("assets/metal-texture.png");
+    border-radius: 5%;
+    width: 60%;
+    border: solid rgba(165, 42, 42, 0.62) 1px;
+    box-shadow: rgba(139, 255, 23, 0.264) 5px 2px;
+  }
+  
+  .Monster-stats {
+    margin: 0 auto;
+    font-size: 50px;
+    background-image: url("assets/metal-texture.png");
+    width: 60%;
+    border: solid rgba(165, 42, 42, 0.62) 1px;
+    box-shadow: rgba(139, 255, 23, 0.264) 5px 2px;
+  }
+  
   .Monster-portrait {
     margin: 20px auto;
-    width: 500px;
-    height: 500px;
-    border-radius: 5%;
-    border: solid brown 1px;
-    box-shadow: chartreuse 5px 2px;
+    filter: blur(0.5px);
+    width: 25vw;
+    height: 45vh;
+    border-radius: 4%;
+    border: solid rgba(165, 42, 42, 0.62) 1px;
+    box-shadow: rgba(139, 255, 23, 0.264) 5px 2px;
   }
-
+  
   .Monster-entry {
     font-family: "VT323", monospace;
-    width: 300px;
-    margin: 20px auto;
-    font-size: 50px;
-    max-width: 300px;
-  }
-
-  .Mutations {
-    grid-area: "stat";
-    margin: 0 auto;
-    border-radius: 10%;
-    box-shadow: black 5px 2px;
-  }
-
-  .Mutation-text {
-    background-image: url("assets/rusty-red-metal.jpeg");
     width: 80%;
-    border-radius: 15%;
-    margin: 5px auto;
-    font-size: 30px;
-    height: 150px;
+    margin: 10px auto;
+    font-size: 40px;
+    max-width: 70%;
   }
-
+  
+  footer {
+    background-image: url("assets/worn-metal-texture.jpg");
+    width: 60%;
+    margin: auto;
+  }
+  
+  .Mutation-container {
+    max-width: 50%;
+    max-height: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-image: url("assets/metal-texture.png");
+    border: solid brown 1px;
+    box-shadow: rgb(139, 255, 23) 5px 2px;
+  }
+  
+  .Mutation {
+    border-radius: 10%;
+    margin: 15px;
+    display: inline-grid;
+    max-width: 250px;
+    background-image: url("assets/rusty-red-metal.jpeg");
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 3px rgb(137, 159, 26);
+    border: solid rgba(165, 42, 42, 0.62) 1px;
+    box-shadow: rgba(139, 255, 23, 0.264) 5px 2px;
+  }
+  
   .Mutation-button {
-    margin: 0 auto;
+    margin: 10px auto;
     font-size: 50px;
+    box-shadow: black 5px 2px;
+    color: rgb(226, 255, 154);
     border-radius: 20%;
     font-family: "VT323", monospace;
     background-image: url("assets/dark-slime.png");
   }
-
+  
   .Mutation-button:hover {
     background-image: url("assets/slime.png");
     box-shadow: rgb(136, 191, 53) 2px 2px;
   }
-
+  
   .Stat-text {
-    padding: 0;
+    font-size: 100px;
+    margin: 0;
+  }
+  
+  .Mutation-text {
+    font-size: 50px;
     margin: 0 auto;
+    max-width: 70%;
+    text-align: center;
+  }
+  
+  .Result-container {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .Results-back {
+    align-items: flex-start;
     font-size: 50px;
   }
+  
+  .Results {
+    font-size: 40px;
+    margin: 15px auto;
+  }
+  
 }
 
 @media screen and (max-width: 520px) {
