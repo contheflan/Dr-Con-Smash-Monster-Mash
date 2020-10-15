@@ -57,16 +57,14 @@ const MutationList = (props) => {
     };
     getMutation();
   }, []);
-  let i = 1
-  const mutationLists = Object.entries(mutations).map(([stat, mutas]) => (
-    <div
-      key={i++}
-      className="Mutation-text"
-    >
-      <p className="Stat-text">{stat}</p>
-      {props.roll[stat] && <p>{props.roll[stat].fields.Name}</p>}
-      {/* THANKS SOLEIL */}
 
+  // THANKS SOLEIL WHEW
+
+  let i = 1;
+  const mutationLists = Object.entries(mutations).map(([stat, mutas]) => (
+    <div key={i++} className="Mutation">
+      <p className="Stat-text">{stat}</p>
+      {props.roll[stat] && <p className="Mutation-text">{props.roll[stat].fields.Name}</p>}
       <Button
         mutas={mutas}
         stat={stat}

@@ -26,7 +26,7 @@ function Create(props) {
         },
       }
     );
-    props.history.push("/Monsters")
+    props.history.push("/Monsters");
   };
   useEffect(() => {
     const getMonster = async () => {
@@ -43,63 +43,61 @@ function Create(props) {
   }, []);
 
   return (
-    <div>
+    <div className="Create-container">
       <header>
+        <div>
         <Link style={{ textDecoration: "none" }} className="Back" to="/">
           Back
         </Link>
+        </div>
         Spice up this boring ol' {monster.Name} with wild and weird new
         abilities! Click on each attribute to mutate and augment its mundane
         stats. Have fun!
       </header>
       <div className="Create-div">
-        <div className="Monster-div">
-          {Object.keys(monster).length > 0 && (
+        {Object.keys(monster).length > 0 && (
+          <div className="Monster-container">
+            <p className="Monster-name">{monster.Name}</p>
             <div>
-              <p className="Monster-name">{monster.Name}</p>
-              <div>
-                <p className="Monster-stats">
-                  {" "}
-                  STR:{monster.STR} DEX:{monster.DEX} CON:{" "}
-                  {monster.CON} INT:{monster.INT} WIS:
-                  {monster.WIS} CHA:{monster.CHA}
-                </p>
-              </div>
-              <div>
-                <img alt="boohoo"
-                  className="Monster-portrait"
-                  src={monster.Image[0].url}
-                ></img>
-              </div>
-              <footer>
-                <form onSubmit={handleSubmit}>
-                  <input
-                    className="Monster-entry"
-                    type="text"
-                    placeholder="ENTER NAME HERE BLEHHH"
-                    value={name}
-                    onChange={(event) => setName(event.target.value)}
-                  />
-                  <button className="Mutation-button">
-                    PUBLISH YOUR ABOMINATION
-                  </button>
-                </form>
-              </footer>
+              <p className="Monster-stats">
+                {" "}
+                STR:{monster.STR} DEX:{monster.DEX} CON: {monster.CON} INT:
+                {monster.INT} WIS:
+                {monster.WIS} CHA:{monster.CHA}
+              </p>
             </div>
-          )}
-        </div>
-        <div>
-          <MutationList
-            className="Mutations"
-            randomRoll={props.randomRoll}
-            monster={monster}
-            setMonster={setMonster}
-            mutations={props.mutations}
-            setMutations={props.setMutations}
-            roll={roll}
-            setRoll={setRoll}
+            <div>
+              <img
+                alt="boohoo"
+                className="Monster-portrait"
+                src={monster.Image[0].url}
+              ></img>
+            </div>
+      <footer>
+        <form onSubmit={handleSubmit}>
+          <input
+            className="Monster-entry"
+            type="text"
+            placeholder="ENTER NAME HERE BLEHHH"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
           />
-        </div>
+          <button className="Mutation-button">PUBLISH YOUR ABOMINATION</button>
+        </form>
+      </footer>
+          </div>
+        )}
+      <div className="Mutation-container">
+        <MutationList
+          randomRoll={props.randomRoll}
+          monster={monster}
+          setMonster={setMonster}
+          mutations={props.mutations}
+          setMutations={props.setMutations}
+          roll={roll}
+          setRoll={setRoll}
+        />
+      </div>
       </div>
     </div>
   );

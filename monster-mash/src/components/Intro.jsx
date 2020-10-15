@@ -11,12 +11,12 @@ function Intro() {
         <p className="Intro-text">
           The wind howls and the moor shimmers with the unrelenting storm. You
           take your final sip from your ancestral cask of Cyrodilic Brandy. The
-          night is young, it's time to create something...{" "}
+          night is young, it's time to make something...{" "}
           <span>MONSTROUS</span>
         </p>
       </div>
       <Link className="Create-button" to={"/Create"}>
-        CREATE
+        PLAY GOD
       </Link>
     </div>
   );
