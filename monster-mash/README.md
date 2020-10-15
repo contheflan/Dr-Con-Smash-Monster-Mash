@@ -2,6 +2,8 @@
 
 Dr. Con Smash Monster Mash
 
+https://the-monster-mash.netlify.app/
+
 ## Project Description
 
 Aren't you just tired of fighting the same old Goblins over and over again? Enter Dr. Con Smash Monster Mash! (Patent Pending) With the push of a button, this magical machine refers to a horrible database of Spooky Monster Traits (Patent Pending) selects a handful of horrible results, and breathes new life (or un-life) into your run of the mill common monster, transforming them into a terrifying titan! (Deadliness results may vary, please contact your Court Wizard)
@@ -49,28 +51,28 @@ https://airtable.com/tbllSjukRV7CtgLlI/viwE3fqve4iIQeAWJ?blocks=hide
 
 | Day    | Deliverable                                        | Status     |
 | ------ | -------------------------------------------------- | ---------- |
-| OCT 08 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| OCT 09 | Project Approval                                   | Incomplete |
-| OCT 12 | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| OCT 13 | Pseudocode / actual code                           | Incomplete |
-| OCT 14 | Initial Clickable Model                            | Incomplete |
-| OCT 15 | MVP                                                | Incomplete |
+| OCT 08 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
+| OCT 09 | Project Approval                                   | Complete   |
+| OCT 12 | Core Application Structure (HTML, CSS, etc.)       | Complete   |
+| OCT 13 | Pseudocode / actual code                           | Complete   |
+| OCT 14 | Initial Clickable Model                            | Complete   |
+| OCT 15 | MVP                                                | Complete   |
 | OCT 16 | Presentations                                      | Incomplete |
 
 ## Timeframes
 
 | Component                                                  | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Creating Base React App with Components, NPM, React Router |    H     |      1hr       |               |             |
-| Implementing Airtable                                      |    H     |      3hrs      |               |             |
-| Writing Specific Page Render Components                    |    H     |      8hrs      |               |             |
-| Writing Monster Mutation Components                        |    H     |      8hrs      |               |             |
-| Connecting Components to App.js                            |    H     |      6hrs      |               |             |
-| Rendering Components                                       |    H     |      8hrs      |               |             |
-| Troubleshooting Components                                 |    H     |      6hrs      |               |             |
-| Adding Media Queries for Mobile/Tablet                     |    H     |      8hrs      |               |             |
-| Troubleshooting CSS                                        |    M     |      6hrs      |               |             |
-| Total                                                      |    -     |     54hrs      |               |             |
+| Creating Base React App with Components, NPM, React Router |    H     |      1hr       |      1hr      |             |
+| Implementing Airtable                                      |    H     |      3hrs      |     3hrs      |             |
+| Writing Specific Page Render Components                    |    H     |      8hrs      |     10hrs     |             |
+| Writing Monster Mutation Components                        |    H     |      8hrs      |     20hrs     |             |
+| Connecting Components to App.js                            |    H     |      6hrs      |     6hrs      |             |
+| Rendering Components                                       |    H     |      8hrs      |     5hrs      |             |
+| Troubleshooting Components                                 |    H     |      6hrs      |     6hrs      |             |
+| Adding Media Queries for Mobile/Tablet                     |    H     |      8hrs      |     2hrs      |             |
+| Troubleshooting CSS                                        |    M     |      6hrs      |     10hrs     |             |
+| Total                                                      |    -     |     54hrs      |     63hrs     |             |
 
 ## SWOT Analysis
 
