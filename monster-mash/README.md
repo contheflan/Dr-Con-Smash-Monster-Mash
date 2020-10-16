@@ -28,6 +28,26 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 https://airtable.com/tbllSjukRV7CtgLlI/viwE3fqve4iIQeAWJ?blocks=hide
 ![Monster Mash Data Sample](https://i.imgur.com/5Q4UIWe.png)
 
+
+let i = 1;
+  const mutationLists = Object.entries(mutations).map(([stat, mutas]) => (
+    <div key={i++} className="Mutation">
+      <p className="Stat-text">{stat}</p>
+      {props.roll[stat] && <p className="Mutation-text">{props.roll[stat].fields.Name}</p>}
+      <Button
+        mutas={mutas}
+        stat={stat}
+        setRoll={props.setRoll}
+        randomRoll={props.randomRoll}
+        getModifiedFields={getModifiedFields}
+        setMonster={props.setMonster}
+        monster={props.monster}
+      />
+    </div>
+  ));
+  return <div>{mutationLists}</div>;
+
+
 ### MVP/PostMVP
 
 #### MVP
@@ -63,16 +83,16 @@ https://airtable.com/tbllSjukRV7CtgLlI/viwE3fqve4iIQeAWJ?blocks=hide
 
 | Component                                                  | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Creating Base React App with Components, NPM, React Router |    H     |      1hr       |      1hr      |             |
-| Implementing Airtable                                      |    H     |      3hrs      |     3hrs      |             |
-| Writing Specific Page Render Components                    |    H     |      8hrs      |     10hrs     |             |
-| Writing Monster Mutation Components                        |    H     |      8hrs      |     20hrs     |             |
-| Connecting Components to App.js                            |    H     |      6hrs      |     6hrs      |             |
-| Rendering Components                                       |    H     |      8hrs      |     5hrs      |             |
-| Troubleshooting Components                                 |    H     |      6hrs      |     6hrs      |             |
-| Adding Media Queries for Mobile/Tablet                     |    H     |      8hrs      |     2hrs      |             |
-| Troubleshooting CSS                                        |    M     |      6hrs      |     10hrs     |             |
-| Total                                                      |    -     |     54hrs      |     63hrs     |             |
+| Creating Base React App with Components, NPM, React Router |    H     |      1hr       |      1hr      |       1hr      |
+| Implementing Airtable                                      |    H     |      3hrs      |     3hrs      |       3hrs      |
+| Writing Specific Page Render Components                    |    H     |      8hrs      |     10hrs     |      10hrs       |
+| Writing Monster Mutation Components                        |    H     |      8hrs      |     15hrs     |       20hrs      |
+| Connecting Components to App.js                            |    H     |      6hrs      |     6hrs      |       6hrs      |
+| Rendering Components                                       |    H     |      8hrs      |     8hrs      |       5hrs      |
+| Troubleshooting Components                                 |    H     |      6hrs      |     12hrs      |      10hrs       |
+| Adding Media Queries for Mobile/Tablet                     |    H     |      8hrs      |     2hrs      |       2hrs      |
+| Troubleshooting CSS                                        |    M     |      6hrs      |     10hrs     |       10hrs      |
+| Total                                                      |    -     |     54hrs      |     67hrs     |       67hrs      |
 
 ## SWOT Analysis
 
