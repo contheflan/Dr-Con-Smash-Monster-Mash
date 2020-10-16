@@ -4,11 +4,16 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MutationList from "./MutationList";
 
+// Huge thanks to Misha for helping me construct and implement
+// this whole mess o' code and working out all the kinks
+
 function Create(props) {
   const [monster, setMonster] = useState({});
   const [monsterId, setMonsterId] = useState([]);
   const [roll, setRoll] = useState({});
   const [name, setName] = useState("");
+
+  // handle submit for entering in your new creation's name! Posts the form to the CREATIONS airtable.
   const handleSubmit = async (event) => {
     event.preventDefault();
     let { CREATIONS, Name, Image, ...monsterFields } = monster;
@@ -28,6 +33,8 @@ function Create(props) {
     );
     props.history.push("/Monsters");
   };
+
+// useEffect for grabbing the monster base image and stats from the MONSTERS airtable (just Goblin for now)
   useEffect(() => {
     const getMonster = async () => {
       const airtableURL = `${baseURL}/monsters?sort%5B0%5D%5Bfield%5D=Name&sort%5B0%5D%5Bdirection%5D=desc`;
@@ -42,6 +49,7 @@ function Create(props) {
     getMonster();
   }, []);
 
+// Rendering components to the create page and linking back to the intro page.
   return (
     <div className="Create-container">
       <header>

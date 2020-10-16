@@ -2,6 +2,8 @@ import { baseURL, key } from "../constants";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Button from "./Button";
+
+// Whenever a mutation is roll, check to see if any stat is modified from the roll (in this case, every stat adds a modifier to the previous stat, some just have 0 values to keep it to 1-2 stats modified per mutation)
 const MutationList = (props) => {
   const [mutations, setMutations] = useState({});
   const getModifiedFields = (fieldName) => {
@@ -26,6 +28,8 @@ const MutationList = (props) => {
     }
     return modifiedFields;
   };
+
+  // The big Kahuna. Taking a large list of mutations from the MUTATIONS airtable and reducing it down to 10 mutations seperated by type (STR, DEX, CON etc.)
   useEffect(() => {
     const getMutation = async () => {
       const response = await axios.get(`${baseURL}/mutations`, {
@@ -34,10 +38,6 @@ const MutationList = (props) => {
         },
       });
       const { records } = response.data;
-      // we're taking the data and using the .reduce() function on it
-      // this function will "reduce" the array to one element, in this case...
-      // ...an object with a key for each stat.
-      // mutations is now an object with six keys, each of which store the mutations that fall under that stat.
       const newMutations = records.reduce(
         (acc, curr) => {
           acc[curr.fields.TYPE].push(curr);
@@ -53,12 +53,16 @@ const MutationList = (props) => {
         }
       );
       setMutations(newMutations);
-      // need to apply newMutation to the dice roll function
     };
     getMutation();
   }, []);
 
   // THANKS SOLEIL WHEW
+
+
+  // rendering more components to the Create page. In this case we are establishing every 
+  // mutation from the reduced list organized by the individual stat, and randomly selecting 
+  // one mutation from the mutations object per stat. Then we store every result in a button.
 
   let i = 1;
   const mutationLists = Object.entries(mutations).map(([stat, mutas]) => (

@@ -3,6 +3,9 @@ import { baseURL, key } from "../constants";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+// Rendering each mutated monster (AKA creation) to a commodore 64
+// style results page! Here you can see other mutations people have
+// created (and pushed to the CREATIONS airtable)
 const Monsters = () => {
   const [creations, setCreations] = useState([]);
   useEffect(() => {
